@@ -23,6 +23,51 @@ header nav ul li {
   padding-left: 1rems;
 }
 
+/* SUBCATEGORIES */
+
+.index {
+  grid-column: 1/-1;
+}
+
+.index li {
+  display: inline;
+}
+
+.index li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  font-weight: 200;
+  margin: 0 0.5rem;
+}
+
+.index li a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.letterSection {
+  border-left: 1px solid rgb(194, 194, 194);
+  padding-left: 1rem;
+}
+
+.letterSection ol {
+  margin: 0;
+}
+.letterSection h2 {
+  font-size: 3rem;
+}
+
+.letterSection li {
+  list-style: none;
+}
+
+.letterSection a {
+  text-decoration: none;
+  margin-bottom: 0.2rem;
+  color: black;
+}
+
 /* PRODUCT LIST */
 
 .productList main {
