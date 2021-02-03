@@ -49,6 +49,7 @@ header nav ul li {
 .letterSection {
   border-left: 1px solid rgb(194, 194, 194);
   padding-left: 1rem;
+  margin: 3rem;
 }
 
 .letterSection ol {
@@ -56,6 +57,8 @@ header nav ul li {
 }
 .letterSection h2 {
   font-size: 3rem;
+  margin-bottom: 0;
+  display: inline;
 }
 
 .letterSection li {
@@ -66,6 +69,13 @@ header nav ul li {
   text-decoration: none;
   margin-bottom: 0.2rem;
   color: black;
+  padding: 0 0.5rem;
+}
+
+.letterSection a:hover {
+  background-color: black;
+  color: white;
+  padding: 0 0.5rem;
 }
 
 /* PRODUCT LIST */
