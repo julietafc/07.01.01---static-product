@@ -19,24 +19,25 @@
     </header>
     <main>
       <h2>You are looking at <span>Apparel</span></h2>
-      <article>
-        <div class="soldOut">
-          <p>Sold Out</p>
-        </div>
-        <div class="discount">
-          <p>45%</p>
-        </div>
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/1000/1165.webp"
-          alt=""
-        />
-        <h3>Mean Team India Cricket Jersey</h3>
-        <div class="artFooter">
-          <p>DKK 2495</p>
-          <a href="product.html">MORE ></a>
-        </div>
-      </article>
-      <article>
+      <template id="productTemplate">
+        <article class="">
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/1000/1165.webp"
+            alt=""
+          />
+          <h3>Mean Team India Cricket Jersey</h3>
+          <p class="subtle">Tshirts | Nike</p>
+          <div class="artFooter">
+            <p class="price">DKK <span>2495</span></p>
+            <div class="discounted">
+              <p>DKK 2497</p>
+              <p>45%</p>
+            </div>
+            <a href="product.html">MORE ></a>
+          </div>
+        </article>
+      </template>
+      <!-- <article>
         <div class="discount">
           <p>28%</p>
         </div>
@@ -46,8 +47,8 @@
           <p>DKK 1299</p>
           <a href="product.html">MORE ></a>
         </div>
-      </article>
-      <article>
+      </article> -->
+      <!-- <article>
         <div class="soldOut">
           <p>Sold Out</p>
         </div>
@@ -79,7 +80,8 @@
           <p>DKK 1595</p>
           <a href="product.html">MORE ></a>
         </div>
-      </article>
+      </article> -->
     </main>
+    <script src="productlist.js"></script>
   </body>
 </html>

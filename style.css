@@ -104,21 +104,30 @@ header nav ul li {
   border-radius: 10px;
 }
 
-.discount {
+.discounted p:nth-child(2) {
+  position: absolute;
+  bottom: 9.8rem;
+  right: -0.8rem;
+  border-radius: 10%;
+  padding: 10px;
   background-color: black;
+  border: 3px solid #000;
   color: white;
+  text-align: center;
+  font-size: 1.2em;
+  z-index: 1;
   width: 4rem;
   height: 4rem;
-  position: absolute;
-  bottom: 7rem;
-  right: -1rem;
-  font-size: 1.2em;
   font-weight: 700;
-  text-align: center;
-  border-radius: 10px;
 }
 
-.soldOut {
+article.soldOut img {
+  opacity: 0.4;
+}
+
+.soldOut::before {
+  z-index: 1;
+  content: "Sold Out";
   position: absolute;
   top: 0.5rem;
   left: -1rem;
@@ -126,7 +135,7 @@ header nav ul li {
   color: white;
   font-weight: 700;
   font-size: 0.7em;
-  padding: 0 0.5rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 5px;
 }
 
@@ -146,7 +155,14 @@ article h3 {
   color: black;
 }
 
-.artFooter p {
+.price,
+.price span {
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.artFooter .price span {
+  text-decoration: line-through;
   font-weight: 600;
 }
 /* PRODUCTS */
