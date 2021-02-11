@@ -35,6 +35,7 @@ function showProduct(product) {
   copy.querySelector(
     "img"
   ).alt = `${product.brandname} ${product.productdisplayname}`;
+  copy.querySelector("a").href = `product.html?id=${product.id}`;
   copy.querySelector(".price span").textContent = product.price;
   copy.querySelector(
     ".subtle"
