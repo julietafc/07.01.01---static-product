@@ -26,7 +26,7 @@ function createNavLink(letter) {
   const template = document.querySelector("#linkTemplate").content;
   const copy = template.cloneNode(true);
   copy.querySelector("a").textContent = letter;
-  copy.querySelector("a").href = `letter_${letter}`;
+  copy.querySelector("a").href = `#letter_${letter}`;
   document.querySelector(".index ol").appendChild(copy);
 }
 
@@ -54,7 +54,7 @@ function showSubCategory(item) {
   //parent
   const firstLetter = item.subcategory[0].toLowerCase();
   const topParent = document.querySelector(`#letter_${firstLetter}`);
-  const elemParent = topParent.querySelector("ol");
+  const elemParent = topParent.querySelector("section ol");
   //append
   elemParent.appendChild(copy);
 }
