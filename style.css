@@ -23,6 +23,11 @@ header nav ul li {
   padding-left: 1rem;
 }
 
+header h1 a {
+  text-decoration: none;
+  color: black;
+}
+
 /* SUBCATEGORIES */
 
 .index {
