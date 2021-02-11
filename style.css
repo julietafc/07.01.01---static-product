@@ -49,7 +49,7 @@ header nav ul li {
 .letterSection {
   border-left: 1px solid rgb(194, 194, 194);
   padding-left: 1rem;
-  margin: 3rem;
+  margin: 3rem 0;
 }
 
 .letterSection ol {
@@ -84,6 +84,7 @@ header nav ul li {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
   gap: 2rem;
+  margin-left: 4rem;
 }
 
 .productList main h2 {
