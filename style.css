@@ -214,6 +214,11 @@ button {
   font-weight: 400;
   text-decoration: underline;
 }
+
+.productimg {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.048), 0 6px 6px rgba(0, 0, 0, 0.062);
+}
+
 @media screen and (min-width: 700px) {
   .product main {
     grid-template-columns: 1fr 450px;
