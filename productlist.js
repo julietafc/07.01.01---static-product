@@ -1,7 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const subcategory = urlParams.get("subcategory");
 console.log(subcategory);
-// const url = "https://kea-alt-del.dk/t7/api/products/" + id;
+// const url = "https://kea-alt-del.dk/t7/api/products/";
 document.querySelector("main h2 span").textContent = subcategory;
 const url = "https://kea-alt-del.dk/t7/api/products?subcategory=" + subcategory;
 

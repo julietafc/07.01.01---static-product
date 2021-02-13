@@ -31,7 +31,7 @@ function createNavLink(letter) {
 }
 
 //fetch data
-fetch("http://kea-alt-del.dk/t7/api/subcategories")
+fetch("https://kea-alt-del.dk/t7/api/subcategories")
   .then((res) => res.json())
   .then(gotData);
 
