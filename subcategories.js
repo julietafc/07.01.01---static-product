@@ -1,6 +1,3 @@
-// create navigation
-// <li><a href="#letter_a">A</a></li>
-
 const letters = "abcdefghijklmnopqrstuvwxyz";
 const letterArray = letters.split("");
 console.log(letterArray);
