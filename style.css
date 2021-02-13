@@ -93,8 +93,19 @@ header h1 a {
   margin-left: 4rem;
 }
 
-.productList main h2 {
+.productList main h2,
+#subcat main h2 {
   grid-column: 1/-1;
+}
+
+#subcat main {
+  margin-left: 4rem;
+}
+
+#subcat .subcatList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  gap: 2rem;
 }
 
 .letterSection h2 {
@@ -117,7 +128,7 @@ header h1 a {
 
 .discounted p:nth-child(2) {
   position: absolute;
-  bottom: 9.8rem;
+  bottom: 8.8rem;
   right: -0.8rem;
   border-radius: 10%;
   padding: 10px;
