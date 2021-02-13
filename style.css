@@ -126,6 +126,9 @@ header h1 a {
   border-radius: 10px;
 }
 
+.hidden {
+  display: none;
+}
 .discounted p:nth-child(2) {
   position: absolute;
   bottom: 8.8rem;
@@ -177,16 +180,22 @@ article h3 {
   color: black;
 }
 
-.price,
-.price span {
+.cross,
+.productList main span.cross {
   font-weight: 600;
   text-decoration: line-through;
 }
 
 .artFooter .price span {
-  text-decoration: line-through;
-  font-weight: 600;
+  text-decoration: none;
+  font: 600;
 }
+
+/* .artFooter .price,
+.artFooter .price span {
+  font-weight: 600;
+  text-decoration: none;
+} */
 /* PRODUCTS */
 
 #wrapper > * {

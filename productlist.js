@@ -44,12 +44,16 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("soldOut");
   }
   if (product.discount) {
-    copy.querySelector("article").classList.add("onSale");
+    copy.querySelector(".discounted").classList.remove("hidden");
     copy.querySelector(".discounted p").textContent =
       "DKK " + (product.price - product.price / product.discount).toFixed();
     copy.querySelector(".discounted p:nth-child(2)").textContent =
       product.discount + "%";
+  } else {
+    copy.querySelector(".artFooter .price").classList.remove("cross");
+    copy.querySelector(".artFooter .price span").classList.remove("cross");
   }
+
   //   // grab parent
   const parent = document.querySelector("main");
   //   // append
