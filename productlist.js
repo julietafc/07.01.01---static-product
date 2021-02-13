@@ -44,7 +44,7 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("soldOut");
   }
   if (product.discount) {
-    copy.querySelector(".discounted").classList.remove("hidden");
+    copy.querySelector(".artFooter .discounted").classList.remove("hidden");
     copy.querySelector(".discounted p").textContent =
       "DKK " + (product.price - product.price / product.discount).toFixed();
     copy.querySelector(".discounted p:nth-child(2)").textContent =
